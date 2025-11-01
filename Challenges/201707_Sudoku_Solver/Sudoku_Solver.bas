@@ -1,4 +1,4 @@
-Attribute VB_Name = "Solve"
+Attribute VB_Name = "Sudoku_Solver"
 
 'Get the values from the excel sheet into an array
 Sub getoriginal()
