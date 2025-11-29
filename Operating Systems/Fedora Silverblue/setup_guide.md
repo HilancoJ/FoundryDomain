@@ -79,7 +79,11 @@ The default GPU drivers are sufficient for most practical purposes.
         1. **Install the drivers:**  
             ```bash
             rpm-ostree install mesa-dri-drivers                 # Typically pre-installed.
+            ```
+            ```bash
             rpm-ostree install mesa-vulkan-drivers              # Typically pre-installed.
+            ```
+            ```bash
             rpm-ostree install mesa-va-drivers-freeworld
             ```  
         
@@ -109,17 +113,17 @@ The default GPU drivers are sufficient for most practical purposes.
             Simplest method.
             1. **Reboot into UEFI / BIOS settings.**
 
-            1. **Disable Secure Boot in Firmware (UEFI) settings.**
+            2. **Disable Secure Boot in Firmware (UEFI) settings.**
 
-            1. **Boot into Fedora Silverblue.**
+            3. **Boot into Fedora Silverblue.**
 
-            1. **Install the drivers:**  
+            4. **Install the drivers:**  
                 ```bash
                 # This command will automatically blacklist the open-source 'nouveau' driver.
                 rpm-ostree install akmod-nvidia xorg-x11-drv-nvidia-cuda
                 ```
 
-            1. **Reboot the system after installation:**  
+            5. **Reboot the system after installation:**  
                 ```bash
                 systemctl reboot
                 ```
@@ -168,7 +172,7 @@ The default GPU drivers are sufficient for most practical purposes.
                 ```
 
                 This creates:
-                ```bash
+                ```
                 /etc/pki/akmods/private/*-private_key.pem   # Private Key
                 /etc/pki/akmods/certs/public_key.der        # Public Certificate (DER for MOK)
                 /etc/pki/akmods/certs/public_key.pem        # Public Certificate (PEM)
@@ -250,6 +254,8 @@ The default GPU drivers are sufficient for most practical purposes.
                 If the build fails, rebuild manually:
                 ```bash
                 sudo akmods --force --rebuild
+                ``` 
+                ```bash
                 sudo rpm-ostree reboot
                 ```
     
@@ -300,5 +306,3 @@ The default GPU drivers are sufficient for most practical purposes.
         awk -F ':' '/:/ {gsub(/^[ \t]+/, "", $2); print $2}' setup_guide_flatpak_apps.md |
         xargs -r flatpak install -y flathub
         ```
-
-        
