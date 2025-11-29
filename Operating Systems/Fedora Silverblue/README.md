@@ -24,5 +24,10 @@ A containerized, **mutable development environment** (based on Podman) that prov
 
 ### ⚙️ Driver Integration on the Base OS Image 
 **Drivers** that rely on kernel modules must be part of the active OSTree deployment to load correctly at boot. This ensures both kernel and user-space components remain in sync within the immutable image.  
-**Flatpaks** and **Toolbox** containers cannot supply host kernel modules, they only provide user-space functionality.  
-Typical examples include GPU drivers, Wi-Fi and Network Adapters, VirtualBox and other low-level hardware drivers.
+Typical examples include:
+- GPU drivers
+- Wi-Fi and Network Adapters
+- VirtualBox 
+- Other low-level hardware drivers.   
+
+**Flatpaks** and **Toolbox** containers cannot supply host kernel modules, they only provide user-space functionality. 
