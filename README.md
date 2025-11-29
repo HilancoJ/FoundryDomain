@@ -1,7 +1,7 @@
 # FoundryDomain
 
 Welcome to the **FoundryDomain**.  
-A central hub for for tutorials, projects, and operating system resources.  
+A central hub for for tutorials, projects and operating system resources.  
 This repository serves as a workspace for research, development and technical problem-solving.
 
 ## 📁 Repository Structure
