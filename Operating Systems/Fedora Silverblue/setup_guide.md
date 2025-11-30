@@ -19,7 +19,18 @@ Including the operating system installation, layering system drivers and install
     The latest [Fedora Silverblue ISO](https://fedoraproject.org/atomic-desktops/silverblue/download) image can be downloaded from the official website.
 
 1. **Verify and Create Installation Media:**  
-    - Verify the downloaded image checksum and signature to ensure its authenticity.
+    - Verify the downloaded image [checksum](https://fedoraproject.org/security) and signature to ensure its authenticity.
+        - Linux:
+            ```bash
+            sha256sum Fedora-Silverblue-ostree-*.iso
+            ```
+        - Windows (Command Prompt):
+            ```bash
+            certutil -hashfile "Fedora-Silverblue-ostree-*.iso" SHA256
+        - Windows (PowerShell):
+            ```bash
+            Get-FileHash "Fedora-Silverblue-ostree-*.iso" -Algorithm SHA256
+            ```
     - Use [Fedora Media Writer](https://docs.fedoraproject.org/en-US/fedora/latest/preparing-boot-media/#_fedora_media_writer) or a similar tool to create a bootable USB drive.
 
 1. **Boot and Install:**  
