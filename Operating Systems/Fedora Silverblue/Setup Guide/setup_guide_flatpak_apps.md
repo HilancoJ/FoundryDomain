@@ -5,6 +5,7 @@
 - **Google Chrome**: com.google.Chrome
 
 ## Development
+- **Github Desktop**: io.github.shiftey.Desktop
 - **Visual Studio Code**: com.visualstudio.code
 - **Sublime Text**: com.sublimetext.three
 - **DBeaver**: io.dbeaver.DBeaverCommunity
@@ -16,8 +17,8 @@
 
 ## Proton
 - **ProtonVPN**: com.protonvpn.www
-- **Proton Pass**: www.proton.Pass
-- **Proton Mail**: www.proton.Mail
+- **Proton Pass**: me.proton.Pass
+- **Proton Mail**: me.proton.Mail
 
 ## Crypto
 - **Monero GUI**: org.getmonero.Monero
@@ -30,4 +31,3 @@
 
 ## Games
 - **Steam**: com.valvesoftware.Steam
-- **Lutris**: net.lutris.Lutris
